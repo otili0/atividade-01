@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <li><a href="#p2">Perfil 02</a></li>
+            <li><a href="#tec">Tecnologia</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    <div id="p1" class="profile01"> 
+        <div class="left_profile01">
+            <div id="p1_Img" class="profile01_imagem">
+                <img class="img_01" src="https://th.bing.com/th/id/R.7e30d05c6ec072136f0a6f8172d1c2bd?rik=tMTy9r7qk2iLfw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-eyU9x8Jw3GU%2fUDXEJ0q65wI%2fAAAAAAAAD9M%2fQmt6e9RCHgM%2fs1600%2fsonic_1991.png&ehk=F2MZud5zkLL8DoK2oA2QhV7BkGoYUcW9XLyiFivbNY4%3d&risl=&pid=ImgRaw&r=0" alt="profile">
+            </div>
+        </div>
+        <div class="right_profile01">
+            <div>
+                <h2 class="name_p1">Gabriel Sena</h2>
+                <p class="des_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae quaerat unde itaque harum provident fuga id ipsa, nam perspiciatis delectus magni similique doloribus aut ducimus, hic esse eum earum!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2" class="profile02">
+        <div class="left_profile02">
+            <div>
+                <h2 class="name_p2">Alguém Sem Nome</h2>
+                <p class="des_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae quaerat unde itaque harum provident fuga id ipsa, nam perspiciatis delectus magni similique doloribus aut ducimus, hic esse eum earum!</p>
+            </div>
+        </div>
+        <div class="right_profile02">
+            <div id="p2_Img" class="profile02_imagem">
+                <img class="img_02" src="https://pbs.twimg.com/profile_images/544337775051296770/INbxCg3P_400x400.png" alt="profile">
+            </div>
+        </div>
+    </div>
+    <div id="tec" class="tec">
+        <p>Tecnologia</p>
+        <img src="./images/iconesTecno.jpg" alt="Icones" width="400px" height="auto" style="border-radius:20px ;">
+        <div class="flex-cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium doloribus porro sed et deleniti, accusamus natus ut iure doloremque atque, reprehenderit illo sunt temporibus? Delectus earum quisquam minus blanditiis?</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident soluta quas tempore aspernatur modi et laborum deleniti porro natus ipsa saepe nam non laudantium iusto accusamus, id nihil ut.</p>
+            </div>
+            <div class="card">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos fugiat similique consectetur, labore rem recusandae consequuntur a, neque dignissimos eligendi vitae asperiores, delectus vero eveniet? Ut tempora impedit inventore!</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div>
+            <div>
+                <div>
+                    <h3>Contato</h3>
+                    <p>Manda mensagem</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" id="mensagem"></textarea>
+                </div>
+                <button onclick="conferirMensagemWhatsApp()"> Conferir Mensagem </button>
+                <button> n sei </button>
+            </div>         
+            <div> 
+                <div>
+                    <p>Nome: <span id="confNome"></span></p>
+                    <p>Mensagem: <span id="confMsg"></span></p>
+                </div>
+                <button onclick="enviar()"> ZAP </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
